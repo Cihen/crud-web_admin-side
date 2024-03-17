@@ -47,6 +47,7 @@ CREATE TABLE products (
                           FOREIGN KEY (category_id) REFERENCES categories (id)
 );
 
+-- Tạo user role ADMIN (tài khoản: usertest1, mật khẩu: 123456)
 INSERT INTO users (username, email, password, fullname, address, telephone, gender, enabled)
 VALUES('usertest1', 'usertest1@gmail.com', '$2a$10$C98hqwVkInANxHROraUqJOHl.vjqkYqT39aDhOfvqV5pjAUqpLhHS','Robert', 'Hanoi','0123456789',1,1);
 
